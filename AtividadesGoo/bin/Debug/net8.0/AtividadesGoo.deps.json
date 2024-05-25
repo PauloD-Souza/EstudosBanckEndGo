@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AtividadesGoo/1.0.0": {
+        "runtime": {
+          "AtividadesGoo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AtividadesGoo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
