@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AtividadesGoo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6396584d69dbcf2513cb68b1134add3cdfef2d62")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e0c80410a37464cb44924355f81083950a23ec1")]
 [assembly: System.Reflection.AssemblyProductAttribute("AtividadesGoo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AtividadesGoo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
