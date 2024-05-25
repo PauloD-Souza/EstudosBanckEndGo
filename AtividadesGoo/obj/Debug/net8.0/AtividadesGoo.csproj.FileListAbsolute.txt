@@ -12,3 +12,18 @@ C:\Users\paulo\OneDrive\Área de Trabalho\Estudos C#\AtividadesGoo\obj\Debug\net
 C:\Users\paulo\OneDrive\Área de Trabalho\Estudos C#\AtividadesGoo\obj\Debug\net8.0\AtividadesGoo.pdb
 C:\Users\paulo\OneDrive\Área de Trabalho\Estudos C#\AtividadesGoo\obj\Debug\net8.0\AtividadesGoo.genruntimeconfig.cache
 C:\Users\paulo\OneDrive\Área de Trabalho\Estudos C#\AtividadesGoo\obj\Debug\net8.0\ref\AtividadesGoo.dll
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\AtividadesGoo\bin\Debug\net8.0\AtividadesGoo.exe
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\AtividadesGoo\bin\Debug\net8.0\AtividadesGoo.deps.json
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\AtividadesGoo\bin\Debug\net8.0\AtividadesGoo.runtimeconfig.json
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\AtividadesGoo\bin\Debug\net8.0\AtividadesGoo.dll
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\AtividadesGoo\bin\Debug\net8.0\AtividadesGoo.pdb
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\AtividadesGoo\obj\Debug\net8.0\AtividadesGoo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\AtividadesGoo\obj\Debug\net8.0\AtividadesGoo.AssemblyInfoInputs.cache
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\AtividadesGoo\obj\Debug\net8.0\AtividadesGoo.AssemblyInfo.cs
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\AtividadesGoo\obj\Debug\net8.0\AtividadesGoo.csproj.CoreCompileInputs.cache
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\AtividadesGoo\obj\Debug\net8.0\AtividadesGoo.sourcelink.json
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\AtividadesGoo\obj\Debug\net8.0\AtividadesGoo.dll
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\AtividadesGoo\obj\Debug\net8.0\refint\AtividadesGoo.dll
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\AtividadesGoo\obj\Debug\net8.0\AtividadesGoo.pdb
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\AtividadesGoo\obj\Debug\net8.0\AtividadesGoo.genruntimeconfig.cache
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\AtividadesGoo\obj\Debug\net8.0\ref\AtividadesGoo.dll
