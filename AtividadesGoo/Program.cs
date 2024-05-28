@@ -64,6 +64,8 @@ public class Program
         {
             Console.WriteLine(ex.Message);
         }*/
+        //Exercicio 4
+        /*
         try
         {
             List<Vertice> vertices = new List<Vertice>
@@ -93,6 +95,24 @@ public class Program
         catch (Exception ex)
         {
             Console.WriteLine(ex.Message);
+        }*/
+         try
+        {
+            Intervalo intervalo1 = new Intervalo(new DateTime(2024, 5, 28, 9, 0, 0), new DateTime(2024, 5, 28, 17, 0, 0));
+            Intervalo intervalo2 = new Intervalo(new DateTime(2024, 5, 28, 13, 0, 0), new DateTime(2024, 5, 28, 18, 0, 0));
+
+            Console.WriteLine($"Intervalo 1: {intervalo1.dataHoraInicial} - {intervalo1.dataHoraFinal}");
+            Console.WriteLine($"Intervalo 2: {intervalo2.dataHoraInicial} - {intervalo2.dataHoraFinal}");
+
+            Console.WriteLine($"Os intervalos têm interseção? {intervalo1.TemIntersecao(intervalo2)}");
+            Console.WriteLine($"A duração do intervalo 1 é: {intervalo1.Duracao}");
+
+            Intervalo intervalo3 = new Intervalo(new DateTime(2024, 5, 28, 9, 0, 0), new DateTime(2024, 5, 28, 17, 0, 0));
+            Console.WriteLine($"O intervalo 1 é igual ao intervalo 3? {intervalo1.Equals(intervalo3)}");
+        }
+        catch (ArgumentException ex)
+        {
+            Console.WriteLine($"Erro: {ex.Message}");
         }
     }
 }
