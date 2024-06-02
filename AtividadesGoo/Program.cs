@@ -96,6 +96,7 @@ public class Program
         {
             Console.WriteLine(ex.Message);
         }*/
+        /* Exercicio 5
          try
         {
             Intervalo intervalo1 = new Intervalo(new DateTime(2024, 5, 28, 9, 0, 0), new DateTime(2024, 5, 28, 17, 0, 0));
@@ -113,7 +114,39 @@ public class Program
         catch (ArgumentException ex)
         {
             Console.WriteLine($"Erro: {ex.Message}");
+        }*/
+        /* Exercicio 6
+        Intervalo intervalo1 = new Intervalo(new DateTime(2024, 6, 1, 9, 0, 0), new DateTime(2024, 6, 1, 10, 0, 0));
+        Intervalo intervalo2 = new Intervalo(new DateTime(2024, 6, 1, 10, 30, 0), new DateTime(2024, 6, 1, 11, 30, 0));
+        Intervalo intervalo3 = new Intervalo(new DateTime(2024, 6, 1, 12, 0, 0), new DateTime(2024, 6, 1, 13, 0, 0));
+
+        ListaIntervalo listaIntervalos = new ListaIntervalo();
+        listaIntervalos.Add(intervalo1);
+        listaIntervalos.Add(intervalo2);
+        listaIntervalos.Add(intervalo3);
+
+        foreach (var intervalo in listaIntervalos.Intervalos)
+        {
+            Console.WriteLine(intervalo);
         }
+
+        Intervalo intervaloSobreposto = new Intervalo(new DateTime(2024, 6, 1, 10, 0, 0), new DateTime(2024, 6, 1, 11, 0, 0));
+        try
+        {
+            listaIntervalos.Add(intervaloSobreposto);
+        }
+        catch (ArgumentException e)
+        {
+            Console.WriteLine(e.Message);
+        }*/
+        /* Exercicio 7*/     
+          for (int i = 1; i <= 10000; i++)
+            {
+                if (i.IsArmstrong())
+                {
+                    Console.WriteLine(i);
+                }
+            }
     }
 }
 
