@@ -139,16 +139,70 @@ public class Program
         {
             Console.WriteLine(e.Message);
         }*/
-        /* Exercicio 7*/     
+        /* Exercicio 7*/
+        /*
           for (int i = 1; i <= 10000; i++)
             {
                 if (i.IsArmstrong())
                 {
                     Console.WriteLine(i);
                 }
+            }*/
+        /* Exercicio 8*/
+        /*
+        Cliente cliente = new Cliente();
+        cliente.ImprimirDados();
+        */
+        /*Desafio 9
+        try
+        {
+            Motor motor1 = new Motor(1.0);
+            Motor motor2 = new Motor(2.0);
+
+            Carro carro1 = new Carro("ABC1234", "Modelo A", motor1);
+            carro1.ImprimirDados();
+
+            Console.WriteLine();
+
+            carro1.TrocarMotor(motor2);
+            carro1.ImprimirDados();
+
+            Console.WriteLine();
+
+            //Confirmando que o metodo irá lança a execption
+            Carro carro2 = new Carro("DEF5678", "Modelo B", motor2);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro: {ex.Message}");
+        }*/
+         List<int> listaInteiros = new List<int> { 1, 2, 2, 3, 4, 4, 5 };
+            listaInteiros.RemoveRepetidos();
+            Console.WriteLine("Lista de Inteiros sem repetidos: " + string.Join(", ", listaInteiros));
+
+            List<string> listaStrings = new List<string> { "a", "b", "b", "c", "a" };
+            listaStrings.RemoveRepetidos();
+            Console.WriteLine("Lista de Strings sem repetidos: " + string.Join(", ", listaStrings));
+
+            List<DesafioCliente> listaClientes = new List<DesafioCliente>
+            {
+                new DesafioCliente("Alice", "12345678901"),
+                new DesafioCliente("Bob", "12345678902"),
+                new DesafioCliente("Alice", "12345678901"), // Cliente repetido
+                new DesafioCliente("Charlie", "12345678903"),
+                new DesafioCliente("Bob", "12345678902") // Cliente repetido
+            };
+
+            listaClientes.RemoveRepetidos();
+            Console.WriteLine("Lista de Clientes sem repetidos:");
+            foreach (var cliente in listaClientes)
+            {
+                Console.WriteLine(cliente);
             }
+        }
     }
-}
+
+
 
 
 
