@@ -1,0 +1,15 @@
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\Consultorio\obj\Debug\net8.0\Consultorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\Consultorio\obj\Debug\net8.0\Consultorio.AssemblyInfoInputs.cache
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\Consultorio\obj\Debug\net8.0\Consultorio.AssemblyInfo.cs
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\Consultorio\obj\Debug\net8.0\Consultorio.csproj.CoreCompileInputs.cache
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\Consultorio\obj\Debug\net8.0\Consultorio.sourcelink.json
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\Consultorio\bin\Debug\net8.0\Consultorio.exe
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\Consultorio\bin\Debug\net8.0\Consultorio.deps.json
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\Consultorio\bin\Debug\net8.0\Consultorio.runtimeconfig.json
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\Consultorio\bin\Debug\net8.0\Consultorio.dll
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\Consultorio\bin\Debug\net8.0\Consultorio.pdb
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\Consultorio\obj\Debug\net8.0\Consultorio.dll
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\Consultorio\obj\Debug\net8.0\refint\Consultorio.dll
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\Consultorio\obj\Debug\net8.0\Consultorio.pdb
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\Consultorio\obj\Debug\net8.0\Consultorio.genruntimeconfig.cache
+C:\Users\paulo\OneDrive\Área de Trabalho\EstudosBanckEndGo\Consultorio\obj\Debug\net8.0\ref\Consultorio.dll
