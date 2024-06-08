@@ -22,9 +22,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 0,
           "Children": [
             {
+=======
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+>>>>>>> 48c8493c1dd6a2af7155fa9f6dadb70afaa54099
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
@@ -32,7 +46,11 @@
               "RelativeDocumentMoniker": "Consultorio\\Program.cs",
               "ToolTip": "C:\\Users\\paulo\\OneDrive\\\u00C1rea de Trabalho\\EstudosBanckEndGo\\Consultorio\\Program.cs",
               "RelativeToolTip": "Consultorio\\Program.cs",
+<<<<<<< HEAD
               "ViewState": "AQIAAAQAAAAAAAAAAAAuwBEAAAAdAAAA",
+=======
+              "ViewState": "AQIAAG4AAAAAAAAAAAAAAHMAAAAcAAAA",
+>>>>>>> 48c8493c1dd6a2af7155fa9f6dadb70afaa54099
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T13:02:29.185Z",
               "EditorCaption": ""
@@ -45,7 +63,11 @@
               "RelativeDocumentMoniker": "Consultorio\\Paciente.cs",
               "ToolTip": "C:\\Users\\paulo\\OneDrive\\\u00C1rea de Trabalho\\EstudosBanckEndGo\\Consultorio\\Paciente.cs",
               "RelativeToolTip": "Consultorio\\Paciente.cs",
+<<<<<<< HEAD
               "ViewState": "AQIAADwAAAAAAAAAAAAAAEcAAAAjAAAA",
+=======
+              "ViewState": "AQIAAFMAAAAAAAAAAAAAAIMAAAAFAAAA",
+>>>>>>> 48c8493c1dd6a2af7155fa9f6dadb70afaa54099
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T12:36:58.337Z",
               "EditorCaption": ""
@@ -60,7 +82,12 @@
               "RelativeToolTip": "Consultorio\\CadastroPaciente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2024-06-08T12:36:47.882Z"
+=======
+              "WhenOpened": "2024-06-08T12:36:47.882Z",
+              "EditorCaption": ""
+>>>>>>> 48c8493c1dd6a2af7155fa9f6dadb70afaa54099
             }
           ]
         }

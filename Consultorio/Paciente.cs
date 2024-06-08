@@ -69,7 +69,11 @@ public class Paciente
         return idade;
     }
 
+<<<<<<< HEAD
     private bool IsValidCPF(string? cpf)
+=======
+    private bool IsValidCPF(string cpf)
+>>>>>>> 48c8493c1dd6a2af7155fa9f6dadb70afaa54099
     {
         cpf = Regex.Replace(cpf, @"[^\d]", "");
 
