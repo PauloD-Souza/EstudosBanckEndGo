@@ -6,6 +6,7 @@ public class Program
     public static void Main(string[] args)
     {
         CadastroPacientes cadastro = new CadastroPacientes();
+        AgendaConsultas agenda = new AgendaConsultas(cadastro);
 
         while (true)
         {
@@ -23,7 +24,7 @@ public class Program
                     MostrarMenuCadastroPaciente(cadastro);
                     break;
                 case "2":
-                    Console.WriteLine("Funcionalidade da agenda ainda não implementada.");
+                    GerenciarAgenda(agenda, cadastro);
                     break;
                 case "3":
                     Console.WriteLine("Fim do programa.");
@@ -136,6 +137,111 @@ public class Program
         foreach (var paciente in pacientes)
         {
             Console.WriteLine(paciente.ToString());
+        }
+    }
+    private static void GerenciarAgenda(AgendaConsultas agenda, CadastroPacientes cadastro)
+    {
+        while (true)
+        {
+            Console.WriteLine("Menu da Agenda");
+            Console.WriteLine("1 - Agendar nova consulta");
+            Console.WriteLine("2 - Cancelar consulta");
+            Console.WriteLine("3 - Listar consultas futuras");
+            Console.WriteLine("4 - Voltar ao menu principal");
+            Console.Write("Escolha uma opção: ");
+
+            string escolha = Console.ReadLine();
+
+            switch (escolha)
+            {
+                case "1":
+                    AgendarConsulta(agenda, cadastro);
+                    break;
+                case "2":
+                    CancelarConsulta(agenda);
+                    break;
+                case "3":
+                    ListarConsultasFuturas(agenda);
+                    break;
+                case "4":
+                    return;
+                default:
+                    Console.WriteLine("Opção inválida. Tente novamente.");
+                    break;
+            }
+        }
+    }
+
+    private static void AgendarConsulta(AgendaConsultas agenda, CadastroPacientes cadastro)
+    {
+        try
+        {
+            Console.Write("Digite o CPF do paciente: ");
+            string cpf = Console.ReadLine();
+
+            Console.Write("Digite a data da consulta (DDMMAAAA): ");
+            string dataConsulta = Console.ReadLine();
+
+            Console.Write("Digite a hora inicial da consulta (HHMM): ");
+            string horaInicial = Console.ReadLine();
+
+            Console.Write("Digite a hora final da consulta (HHMM): ");
+            string horaFinal = Console.ReadLine();
+
+            Consulta consulta = new Consulta(cpf, dataConsulta, horaInicial, horaFinal);
+            agenda.AgendarConsulta(consulta);
+
+            Console.WriteLine("Consulta agendada com sucesso!");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro: {ex.Message}");
+        }
+    }
+
+    private static void CancelarConsulta(AgendaConsultas agenda)
+    {
+        try
+        {
+            Console.Write("Digite o CPF do paciente: ");
+            string cpf = Console.ReadLine();
+
+            Console.Write("Digite a data da consulta (DDMMAAAA): ");
+            string dataConsulta = Console.ReadLine();
+
+            if (DateTime.TryParseExact(dataConsulta, "ddMMyyyy", null, System.Globalization.DateTimeStyles.None, out var data))
+            {
+                agenda.ExcluirConsulta(cpf, data);
+                Console.WriteLine("Consulta cancelada com sucesso!");
+            }
+            else
+            {
+                Console.WriteLine("Data da consulta inválida.");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro: {ex.Message}");
+        }
+    }
+
+    private static void ListarConsultasFuturas(AgendaConsultas agenda)
+    {
+        Console.Write("Digite o CPF do paciente: ");
+        string cpf = Console.ReadLine();
+
+        var consultas = agenda.ListarConsultasFuturas(cpf);
+        if (consultas.Any())
+        {
+            Console.WriteLine("Consultas futuras:");
+            foreach (var consulta in consultas)
+            {
+                Console.WriteLine($"Data: {consulta.DataConsulta:dd/MM/yyyy}, Hora Inicial: {consulta.HoraInicial}, Hora Final: {consulta.HoraFinal}");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Nenhuma consulta futura encontrada.");
         }
     }
 }
