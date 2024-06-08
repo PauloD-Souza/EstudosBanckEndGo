@@ -1,4 +1,7 @@
 namespace Consultorio;
+using System;
+using System.Globalization;
+using System.Text.RegularExpressions;
 
 public class Paciente
 {
@@ -12,20 +15,31 @@ public class Paciente
         SetNome(nome);
         SetDataNascimento(dataNascimento);
     }
-    private void SetCPF (string cpf){
-        if (CpfValido){
+
+    private void SetCPF(string cpf)
+    {
+        if (IsValidCPF(cpf))
+        {
             CPF = cpf;
-        }else {
-            throw new ArgumentException("CPF Inválido");
+        }
+        else
+        {
+            throw new ArgumentException("CPF inválido.");
         }
     }
-    private void SetNome (string nome){
-        if (nome.Length >= 5){
-            Nome = nome
-        }else{
+
+    private void SetNome(string nome)
+    {
+        if (nome.Length >= 5)
+        {
+            Nome = nome;
+        }
+        else
+        {
             throw new ArgumentException("Nome deve ter pelo menos 5 caracteres.");
         }
     }
+
     private void SetDataNascimento(string dataNascimento)
     {
         if (DateTime.TryParseExact(dataNascimento, "ddMMyyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data))
@@ -45,14 +59,17 @@ public class Paciente
         }
     }
 
-    private int CalcularIdade (DateTime dataNascimento){
-        int idade = DateTime.Now.Yeat - dataNascimento.Year;
-        if (DateTime.Now.DayOfYear < dataNascimento.DayOfYear){
+    private int CalcularIdade(DateTime dataNascimento)
+    {
+        int idade = DateTime.Now.Year - dataNascimento.Year;
+        if (DateTime.Now.DayOfYear < dataNascimento.DayOfYear)
+        {
             idade--;
         }
-        return idade
+        return idade;
     }
-    private bool CpfValido(string cpf)
+
+    private bool IsValidCPF(string cpf)
     {
         cpf = Regex.Replace(cpf, @"[^\d]", "");
 
@@ -112,5 +129,9 @@ public class Paciente
         digito = digito + resto.ToString();
 
         return cpf.EndsWith(digito);
+    }
+    public override string ToString()
+    {
+        return $"CPF: {CPF}, Nome: {Nome}, Data de Nascimento: {DataNascimento:dd/MM/yyyy}";
     }
 }
