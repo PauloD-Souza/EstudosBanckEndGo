@@ -27,7 +27,6 @@ public class Program
                     break;
                 case "3":
                     Console.WriteLine("Fim do programa.");
-                    Console.WriteLine("Teste teste.");
                     return;
                 default:
                     Console.WriteLine("Opção inválida. Tente novamente.");
