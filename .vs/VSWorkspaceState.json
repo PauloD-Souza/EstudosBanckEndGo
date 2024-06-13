@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Consultorio"
+    "\\Consultorio",
+    "\\Consultorio\\services"
   ],
-  "SelectedNode": "\\Consultorio\\CadastroPaciente.cs",
+  "SelectedNode": "\\Consultorio\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

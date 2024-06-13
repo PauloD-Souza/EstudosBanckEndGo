@@ -1,5 +1,5 @@
-namespace Consultorio;
-
+namespace Consultorio.services;
+using Consultorio.model;
 using System;
 using System.Collections.Generic;
 

@@ -1,4 +1,4 @@
-namespace Consultorio;
+namespace Consultorio.model;
 
 using System;
 

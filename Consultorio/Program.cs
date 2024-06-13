@@ -1,6 +1,6 @@
 ﻿namespace Consultorio;
-
-using System;
+using Consultorio.model;
+using Consultorio.services;
 public class Program
 {
     public static void Main(string[] args)
