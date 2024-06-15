@@ -53,4 +53,5 @@ public class CadastroPacientes
     {
         return pacientes.OrderBy(p => p.Nome).ToList();
     }
+
 }

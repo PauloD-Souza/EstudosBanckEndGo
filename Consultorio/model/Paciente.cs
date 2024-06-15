@@ -71,7 +71,7 @@ public class Paciente
 
     private bool IsValidCPF(string? cpf)
     {
-        cpf = Regex.Replace(cpf?, @"[^\d]", "");
+        cpf = Regex.Replace(cpf, @"[^\d]", "");
 
         if (cpf.Length != 11)
         {

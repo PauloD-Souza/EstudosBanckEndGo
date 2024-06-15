@@ -2,7 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Consultorio",
-    "\\Consultorio\\services"
+    "\\Consultorio\\model",
+    "\\Consultorio\\services",
+    "\\Consultorio\\utils"
   ],
   "SelectedNode": "\\Consultorio\\Program.cs",
   "PreviewInSolutionExplorer": false
