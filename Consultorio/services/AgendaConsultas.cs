@@ -5,7 +5,7 @@ using System.Linq;
 
 public class AgendaConsultas
 {
-	private List<Consulta> consultas = new List<Consulta>();
+	private readonly List<Consulta> consultas = new List<Consulta>();
 	private CadastroPacientes cadastro;
 
 	public AgendaConsultas(CadastroPacientes cadastro)
@@ -14,6 +14,8 @@ public class AgendaConsultas
 	}
     public void AgendarConsulta(Consulta consulta)
     {
+        ValidarConsulta(consulta);
+
         if (!cadastro.ObterPacientesOrdenadosPorCPF().Any(p => p.CPF == consulta.CPF))
             throw new ArgumentException("CPF não encontrado no cadastro de pacientes.");
 
@@ -41,4 +43,33 @@ public class AgendaConsultas
 	{
 		return consultas.Where(c => c.CPF == cpf && c.DataConsulta > DateTime.Now).ToList();
 	}
+
+    private void ValidarConsulta(Consulta consulta)
+    {
+        if (consulta.DataConsulta == default)
+            throw new ArgumentException("Data da consulta inválida.");
+
+        if (consulta.HoraInicial == default || consulta.HoraFinal == default)
+            throw new ArgumentException("Horas de consulta inválidas.");
+
+        if (consulta.HoraInicial.Minutes % 15 != 0 || consulta.HoraFinal.Minutes % 15 != 0)
+            throw new ArgumentException("As horas inicial e final devem ser múltiplos de 15 minutos.");
+
+        if (consulta.HoraFinal <= consulta.HoraInicial)
+            throw new ArgumentException("Hora final deve ser maior que a hora inicial.");
+
+        TimeSpan horaAbertura = new TimeSpan(8, 0, 0);
+        TimeSpan horaFechamento = new TimeSpan(19, 0, 0);
+
+        if (consulta.HoraInicial < horaAbertura || consulta.HoraInicial >= horaFechamento)
+            throw new ArgumentException("A hora inicial da consulta deve estar dentro do horário de funcionamento (8:00h às 19:00h).");
+
+        if (consulta.HoraFinal <= horaAbertura || consulta.HoraFinal > horaFechamento)
+            throw new ArgumentException("A hora final da consulta deve estar dentro do horário de funcionamento (8:00h às 19:00h).");
+
+        DateTime dataHoraConsulta = consulta.DataConsulta.Date + consulta.HoraInicial;
+
+        if (dataHoraConsulta <= DateTime.Now)
+            throw new ArgumentException("A consulta deve ser marcada para um período futuro.");
+    }
 }

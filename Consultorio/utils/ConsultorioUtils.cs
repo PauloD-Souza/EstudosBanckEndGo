@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Globalization;
 using Consultorio.model;
 using Consultorio.services;
 
@@ -154,13 +155,15 @@ namespace Consultorio
                 string cpf = Console.ReadLine();
 
                 Console.Write("Digite a data da consulta (DDMMAAAA): ");
-                string dataConsulta = Console.ReadLine();
-
+                string data = Console.ReadLine();
+                DateTime dataConsulta = DateTime.ParseExact(data, "ddMMyyyy", CultureInfo.InvariantCulture);
                 Console.Write("Digite a hora inicial da consulta (HHMM): ");
-                string horaInicial = Console.ReadLine();
+                string entradaHora = Console.ReadLine();
+                TimeSpan horaInicial = TimeSpan.ParseExact(entradaHora, "hhmm", null);
 
                 Console.Write("Digite a hora final da consulta (HHMM): ");
-                string horaFinal = Console.ReadLine();
+                string saidaHora = Console.ReadLine();
+                TimeSpan horaFinal = TimeSpan.ParseExact(saidaHora, "hhmm", null);
 
                 Consulta consulta = new Consulta(cpf, dataConsulta, horaInicial, horaFinal);
                 agenda.AgendarConsulta(consulta);
