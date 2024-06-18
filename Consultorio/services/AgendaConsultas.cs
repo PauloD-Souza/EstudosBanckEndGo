@@ -40,9 +40,14 @@ public class AgendaConsultas
 
 
     public List<Consulta> ListarConsultasFuturas(string cpf)
-	{
-		return consultas.Where(c => c.CPF == cpf && c.DataConsulta > DateTime.Now).ToList();
-	}
+    {
+        var consultasFuturas = consultas
+            .Where(c => c.CPF == cpf && c.DataConsulta >= DateTime.Today)
+            .OrderBy(c => c.DataConsulta)
+            .ToList();
+
+        return consultasFuturas;
+    }
 
     private void ValidarConsulta(Consulta consulta)
     {
@@ -71,5 +76,12 @@ public class AgendaConsultas
 
         if (dataHoraConsulta <= DateTime.Now)
             throw new ArgumentException("A consulta deve ser marcada para um período futuro.");
+    }
+    public List<Consulta> ListarConsultasPorPeriodo(string cpf, DateTime dataInicial, DateTime dataFinal)
+    {
+        return consultas
+            .Where(c => c.CPF == cpf && c.DataConsulta >= dataInicial && c.DataConsulta <= dataFinal)
+            .OrderBy(c => c.DataConsulta)
+            .ToList();
     }
 }

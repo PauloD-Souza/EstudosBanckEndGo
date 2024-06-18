@@ -132,6 +132,7 @@ public class Paciente
     }
     public override string ToString()
     {
-        return $"CPF: {CPF}, Nome: {Nome}, Data de Nascimento: {DataNascimento:dd/MM/yyyy}";
+        int idade = CalcularIdade(DataNascimento);
+        return $"CPF: {CPF}, Nome: {Nome}, Data de Nascimento: {DataNascimento:dd/MM/yyyy}, Idade: {idade} anos";
     }
 }

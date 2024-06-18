@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\paulo\\OneDrive\\\u00C1rea de Trabalho\\EstudosBanckEndGo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|c:\\users\\paulo\\onedrive\\\u00E1rea de trabalho\\estudosbanckendgo\\consultorio\\model\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|solutionrelative:consultorio\\model\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|c:\\users\\paulo\\onedrive\\\u00E1rea de trabalho\\estudosbanckendgo\\consultorio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|solutionrelative:consultorio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|c:\\users\\paulo\\onedrive\\\u00E1rea de trabalho\\estudosbanckendgo\\consultorio\\services\\cadastropaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|solutionrelative:consultorio\\services\\cadastropaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|c:\\users\\paulo\\onedrive\\\u00E1rea de trabalho\\estudosbanckendgo\\consultorio\\services\\agendaconsultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|solutionrelative:consultorio\\services\\agendaconsultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|c:\\users\\paulo\\onedrive\\\u00E1rea de trabalho\\estudosbanckendgo\\consultorio\\utils\\consultorioutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|solutionrelative:consultorio\\utils\\consultorioutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|c:\\users\\paulo\\onedrive\\\u00E1rea de trabalho\\estudosbanckendgo\\consultorio\\consultorio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|solutionrelative:consultorio\\consultorio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|c:\\users\\paulo\\onedrive\\\u00E1rea de trabalho\\estudosbanckendgo\\consultorio\\model\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|solutionrelative:consultorio\\model\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|c:\\users\\paulo\\onedrive\\\u00E1rea de trabalho\\estudosbanckendgo\\consultorio\\services\\cadastropaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|solutionrelative:consultorio\\services\\cadastropaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B73ECA9-EBEC-42B5-9A0C-1EE312AC4454}|Consultorio\\Consultorio.csproj|c:\\users\\paulo\\onedrive\\\u00E1rea de trabalho\\estudosbanckendgo\\consultorio\\model\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,37 +38,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "ConsultorioUtils.cs",
+              "DocumentMoniker": "C:\\Users\\paulo\\OneDrive\\\u00C1rea de Trabalho\\EstudosBanckEndGo\\Consultorio\\utils\\ConsultorioUtils.cs",
+              "RelativeDocumentMoniker": "Consultorio\\utils\\ConsultorioUtils.cs",
+              "ToolTip": "C:\\Users\\paulo\\OneDrive\\\u00C1rea de Trabalho\\EstudosBanckEndGo\\Consultorio\\utils\\ConsultorioUtils.cs",
+              "RelativeToolTip": "Consultorio\\utils\\ConsultorioUtils.cs",
+              "ViewState": "AQIAAPcAAAAAAAAAAAAcwPsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T23:19:57.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Consultorio",
+              "DocumentMoniker": "C:\\Users\\paulo\\OneDrive\\\u00C1rea de Trabalho\\EstudosBanckEndGo\\Consultorio\\Consultorio.csproj",
+              "RelativeDocumentMoniker": "Consultorio\\Consultorio.csproj",
+              "ToolTip": "C:\\Users\\paulo\\OneDrive\\\u00C1rea de Trabalho\\EstudosBanckEndGo\\Consultorio\\Consultorio.csproj",
+              "RelativeToolTip": "Consultorio\\Consultorio.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-18T23:19:36.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Paciente.cs",
               "DocumentMoniker": "C:\\Users\\paulo\\OneDrive\\\u00C1rea de Trabalho\\EstudosBanckEndGo\\Consultorio\\model\\Paciente.cs",
               "RelativeDocumentMoniker": "Consultorio\\model\\Paciente.cs",
               "ToolTip": "C:\\Users\\paulo\\OneDrive\\\u00C1rea de Trabalho\\EstudosBanckEndGo\\Consultorio\\model\\Paciente.cs",
               "RelativeToolTip": "Consultorio\\model\\Paciente.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAuwE8AAAAAAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAuwEYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T01:22:39.02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\paulo\\OneDrive\\\u00C1rea de Trabalho\\EstudosBanckEndGo\\Consultorio\\Program.cs",
               "RelativeDocumentMoniker": "Consultorio\\Program.cs",
               "ToolTip": "C:\\Users\\paulo\\OneDrive\\\u00C1rea de Trabalho\\EstudosBanckEndGo\\Consultorio\\Program.cs",
               "RelativeToolTip": "Consultorio\\Program.cs",
-              "ViewState": "AQIAAN8AAAAAAAAAAAAowPcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T01:20:08.19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "CadastroPaciente.cs",
               "DocumentMoniker": "C:\\Users\\paulo\\OneDrive\\\u00C1rea de Trabalho\\EstudosBanckEndGo\\Consultorio\\services\\CadastroPaciente.cs",
               "RelativeDocumentMoniker": "Consultorio\\services\\CadastroPaciente.cs",
@@ -68,25 +102,24 @@
               "RelativeToolTip": "Consultorio\\services\\CadastroPaciente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T01:17:29.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-15T01:17:29.916Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AgendaConsultas.cs",
               "DocumentMoniker": "C:\\Users\\paulo\\OneDrive\\\u00C1rea de Trabalho\\EstudosBanckEndGo\\Consultorio\\services\\AgendaConsultas.cs",
               "RelativeDocumentMoniker": "Consultorio\\services\\AgendaConsultas.cs",
               "ToolTip": "C:\\Users\\paulo\\OneDrive\\\u00C1rea de Trabalho\\EstudosBanckEndGo\\Consultorio\\services\\AgendaConsultas.cs",
               "RelativeToolTip": "Consultorio\\services\\AgendaConsultas.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAACAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAAAFUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T01:13:07.79Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Consulta.cs",
               "DocumentMoniker": "C:\\Users\\paulo\\OneDrive\\\u00C1rea de Trabalho\\EstudosBanckEndGo\\Consultorio\\model\\Consulta.cs",
               "RelativeDocumentMoniker": "Consultorio\\model\\Consulta.cs",
@@ -94,8 +127,7 @@
               "RelativeToolTip": "Consultorio\\model\\Consulta.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T01:12:58.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-15T01:12:58.843Z"
             }
           ]
         }

@@ -207,28 +207,72 @@ namespace Consultorio
         }
         private static void ListarConsultasFuturas(AgendaConsultas agenda)
         {
+            Console.WriteLine("Como você deseja listar as consultas futuras?");
+            Console.WriteLine("1 - Todas as consultas futuras");
+            Console.WriteLine("2 - Consultas futuras dentro de um período");
+            Console.Write("Escolha uma opção (1 ou 2): ");
+            string opcao = Console.ReadLine();
+
+            switch (opcao)
+            {
+                case "1":
+                    ListarTodasConsultasFuturas(agenda);
+                    break;
+                case "2":
+                    ListarConsultasPorPeriodo(agenda);
+                    break;
+                default:
+                    Console.WriteLine("Opção inválida.");
+                    break;
+            }
+        }
+
+        private static void ListarTodasConsultasFuturas(AgendaConsultas agenda)
+        {
             Console.Write("Digite o CPF do paciente: ");
             string cpf = Console.ReadLine();
 
             var consultas = agenda.ListarConsultasFuturas(cpf);
+            MostrarConsultas(consultas);
+        }
+
+        private static void ListarConsultasPorPeriodo(AgendaConsultas agenda)
+        {
+            Console.Write("Digite o CPF do paciente: ");
+            string cpf = Console.ReadLine();
+
+            Console.Write("Digite a data inicial do período (DDMMAAAA): ");
+            string dataInicialStr = Console.ReadLine();
+            DateTime dataInicial = DateTime.ParseExact(dataInicialStr, "ddMMyyyy", CultureInfo.InvariantCulture);
+
+            Console.Write("Digite a data final do período (DDMMAAAA): ");
+            string dataFinalStr = Console.ReadLine();
+            DateTime dataFinal = DateTime.ParseExact(dataFinalStr, "ddMMyyyy", CultureInfo.InvariantCulture);
+
+            var consultas = agenda.ListarConsultasPorPeriodo(cpf, dataInicial, dataFinal);
+            MostrarConsultas(consultas);
+        }
+
+        private static void MostrarConsultas(IEnumerable<Consulta> consultas)
+        {
             if (consultas.Any())
             {
                 Console.WriteLine("------------------------------------------------------------");
                 Console.WriteLine("Consultas futuras:");
                 Console.WriteLine("------------------------------------------------------------");
                 Console.WriteLine("Data        | Hora Inicial | Hora Final | CPF");
-                Console.WriteLine("------------|--------------|------------|-------------------" );
+                Console.WriteLine("------------|--------------|------------|-------------------");
 
                 foreach (var consulta in consultas)
                 {
-                    Console.WriteLine($"{consulta.DataConsulta:dd/MM/yyyy}  | {consulta.HoraInicial:hh\\:mm}   | {consulta.HoraFinal:hh\\:mm}       | {consulta.CPF}");
+                    Console.WriteLine($"{consulta.DataConsulta:dd/MM/yyyy}  | {consulta.HoraInicial:hh\\:mm}   | {consulta.HoraFinal:hh\\:mm}  | {consulta.CPF}");
                 }
 
                 Console.WriteLine("------------------------------------------------------------");
             }
             else
             {
-                Console.WriteLine("Nenhuma consulta futura encontrada.");
+                Console.WriteLine("Nenhuma consulta futura encontrada para o período informado.");
             }
         }
 

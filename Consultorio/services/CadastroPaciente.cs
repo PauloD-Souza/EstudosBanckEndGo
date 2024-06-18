@@ -9,7 +9,7 @@ public class CadastroPacientes
 
     public void AdicionarPaciente(Paciente paciente)
     {
-        if (!PacienteExiste(paciente.CPF))
+        if (!PacienteExiste(paciente.CPF!))
         {
             pacientes.Add(paciente);
             Console.WriteLine("Paciente cadastrado com sucesso!");
