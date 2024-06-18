@@ -216,12 +216,12 @@ namespace Consultorio
                 Console.WriteLine("------------------------------------------------------------");
                 Console.WriteLine("Consultas futuras:");
                 Console.WriteLine("------------------------------------------------------------");
-                Console.WriteLine("Data        | Hora Inicial | Hora Final");
-                Console.WriteLine("------------|--------------|-----------");
+                Console.WriteLine("Data        | Hora Inicial | Hora Final | CPF");
+                Console.WriteLine("------------|--------------|------------|-------------------" );
 
                 foreach (var consulta in consultas)
                 {
-                    Console.WriteLine($"{consulta.DataConsulta:dd/MM/yyyy} | {consulta.HoraInicial:hh\\:mm}   | {consulta.HoraFinal:hh\\:mm}");
+                    Console.WriteLine($"{consulta.DataConsulta:dd/MM/yyyy}  | {consulta.HoraInicial:hh\\:mm}   | {consulta.HoraFinal:hh\\:mm}       | {consulta.CPF}");
                 }
 
                 Console.WriteLine("------------------------------------------------------------");
